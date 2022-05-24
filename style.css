@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
+html {
+    height: 100vh;
+    overflow: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    height: 100vh;
+    background-image: url("./img/background.jpg");
+    /* background-position-y: 100px; */
+    background-repeat: no-repeat;
+    background-size: fill;
+    /* display: inline; */
+    /* overflow: ; */
+    background-position-y: 122%;
+}
+
+.navbar {
+    background-color: orange;
+    display: flex!important;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    /* gap: 20px; */
+}
+
+.navbar>div {
+    display: inline-flex;
+    margin: auto;
+    /* flex: 1 1 auto; */
+}
+
+.navbar>div>h1 {
+    vertical-align: center;
+    text-align: center;
+}
+
+.image {
+    display: block;
+    height: 150px;
+    width: auto;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {}
+
+.nombre {
+    padding-left: 18vw;
+    padding-right: 5px;
+    box-sizing: border-box;
+}
+
+header {}
+
+.barra-lateral {
+    height: 100vh;
+    background-color: yellow;
+    width: 10vw;
+    display: block;
+    position: absolute;
+    overflow: hidden;
+}
+
+.barra-lateral ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.barra-lateral li {
+    /* margin: 20px auto 20px; */
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.barra-lateral ul:first-child {
+    /* margin: 20px auto 20px; */
+    /* width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 20px ;
+    padding-bottom: 20px; */
+    margin-top: 20px;
+}
+
+.barra-lateral li:hover {
+    background-color: aliceblue;
+}
+
+@media(max-width:675px) {
+    .nombre {
+        width: 200px;
+    }
+    .nombre h1 {
+        font-size: 25px;
+    }
+    .image {
+        height: 100px;
+    }
+}
+
+@media(max-width:1190px) {
+    .barra-lateral {
+        /* height: 70%; */
+    }
+}
+
+@media(max-width:991px) {
+    .barra-lateral {
+        width: 15vw;
+    }
+}
+
+@media(max-width:392px) {
+    img>div {
+        order: 0;
+    }
+    .nombre {
+        order: 1;
+    }
+}
